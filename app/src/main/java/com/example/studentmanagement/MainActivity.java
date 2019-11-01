@@ -39,12 +39,7 @@ public class  MainActivity extends AppCompatActivity implements AdapterView.OnIt
     private EditText userid;
     private EditText password;
 
-    DatabaseReference ref;
-    DatabaseReference aref;
-    DatabaseReference fref;
-    DatabaseReference sref;
-    DatabaseReference adref;
-    DatabaseReference facref;
+    DatabaseReference ref,aref,fref,sref,adref,facref;
     Member member;
     Admin adm;
     Faculty fac;
@@ -53,11 +48,6 @@ public class  MainActivity extends AppCompatActivity implements AdapterView.OnIt
     StoredFacultyData sfd;
     String spn="";
     long flag=1;
-    long aflag=1;
-    long fflag=1;
-    long sfflag=1;
-    long saflag=1;
-    private long backpressedtime;
 
 
     @Override
@@ -324,10 +314,6 @@ public class  MainActivity extends AppCompatActivity implements AdapterView.OnIt
                 userid.setText("");
                 password.setText("");
                 flag=1;
-                aflag=1;
-                fflag=1;
-                saflag=1;
-                sfflag=1;
             }
         });
     }
